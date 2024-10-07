@@ -46,26 +46,35 @@ async function loadData() {
     });
 
     // Initialisation du carrousel
-    const carouselItems = document.querySelectorAll(".carousel-item");
-    let currentIndex = 0;
+    // Initialisation des variables
+const carouselItems = document.querySelectorAll(".carousel-item");
+const indicators = document.querySelectorAll(".indicator");
+let currentIndex = 0;
 
-    document.querySelector(".next").addEventListener("click", () => {
-        if (currentIndex < carouselItems.length - 1) {
-            currentIndex++;
-        } else {
-            currentIndex = 0;
-        }
-        carouselTrack.style.transform = `translateX(-${currentIndex * 100}%)`;
-    });
+function updateCarousel(index) {
+  carouselTrack.style.transform = `translateX(-${index * 100}%)`;
+  indicators.forEach((indicator, i) => {
+    indicator.classList.toggle("active", i === index);
+  });
+}
 
-    document.querySelector(".prev").addEventListener("click", () => {
-        if (currentIndex > 0) {
-            currentIndex--;
-        } else {
-            currentIndex = carouselItems.length - 1;
-        }
-        carouselTrack.style.transform = `translateX(-${currentIndex * 100}%)`;
-    });
+document.querySelector(".next").addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % carouselItems.length;
+  updateCarousel(currentIndex);
+});
+
+document.querySelector(".prev").addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+  updateCarousel(currentIndex);
+});
+
+indicators.forEach((indicator, index) => {
+  indicator.addEventListener("click", () => {
+    currentIndex = index;
+    updateCarousel(currentIndex);
+  });
+});
+
 }
 
 loadData();
