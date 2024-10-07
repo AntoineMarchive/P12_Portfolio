@@ -23,6 +23,10 @@
         {
             "logo":"./assets/icons/devtools.png",
             "label": "DevTools"
+        },
+        {
+            "logo":"./assets/icons/github.png",
+            "label": "Github"
         }
     ],
 
