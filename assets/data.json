@@ -21,6 +21,10 @@
             "label": "React"
         },
         {
+            "logo":"./assets/icons/redux.png",
+            "label": "Redux"
+        },
+        {
             "logo":"./assets/icons/devtools.png",
             "label": "DevTools"
         },
@@ -47,7 +51,7 @@
             "description":"",
             "images":"/assets/images/Sophiebuel.png",
             "skills": {
-                "logo":"",
+                "logo":"./assets/icons/javascript.png",
                 "label":"Javascript"
             }
         },
@@ -57,7 +61,7 @@
             "description":"",
             "images":"/assets/images/Kasa.png",
             "skills": {
-                "logo":"",
+                "logo":"./assets/icons/react.png",
                 "label":"React"
             }
         },
@@ -67,7 +71,7 @@
             "description":"",
             "images":"/assets/images/Argentbank.png",
             "skills": {
-                "logo":"",
+                "logo":"./assets/icons/react.png",
                 "label":"React, Redux"
             }
         }
