@@ -19,7 +19,6 @@ body {
   color: #fff;
   padding: 20px;
   text-align: center;
-  position: sticky;
   top: 0;
   z-index: 10;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -117,6 +116,7 @@ article img {
   margin-bottom: 10px;
   border-radius: 50%;
   animation: bounce 2s infinite;
+  object-fit: cover;
 }
 
 /* Carousel Styles */
