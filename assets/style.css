@@ -398,3 +398,38 @@ footer a:hover {
     padding: 5px;
   }
 }
+
+/* Grille pour les projets en mode mobile */
+@media (max-width: 425px) {
+  .projects {
+    height: auto; /* Ajustement de la hauteur pour l'affichage en grille */
+  }
+
+  .project-track {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+    transform: none; /* Supprime la transformation du carrousel */
+  }
+
+  .carousel-item {
+    min-width: unset; /* Désactiver la largeur minimale du carrousel */
+    max-width: 100%; /* Ajuster à la grille */
+  }
+
+  .carousel-item img {
+    max-width: 100%; /* Ajuster l'image à la grille */
+    height: auto; /* Laisser l'image ajuster sa hauteur automatiquement */
+  }
+
+  /* Masquer les boutons de navigation */
+  .project-btn {
+    display: none;
+  }
+
+  /* Masquer les indicateurs (bullet points) */
+  .carousel-indicators {
+    display: none;
+  }
+}
