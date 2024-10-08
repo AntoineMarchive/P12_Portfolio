@@ -49,7 +49,7 @@
             "title":"Sophie_Buel",
             "github":"https://github.com/AntoineMarchive/Portfolio-architecte-sophie-bluel.git",
             "description":"",
-            "images":"/assets/images/Sophiebuel.png",
+            "images":"./assets/images/Sophiebuel.png",
             "skills": {
                 "logo":"./assets/icons/javascript.png",
                 "label":"Javascript"
@@ -59,7 +59,7 @@
             "title":"kasa",
             "github":"https://github.com/AntoineMarchive/Kasa_Projet7.git",
             "description":"",
-            "images":"/assets/images/Kasa.png",
+            "images":"./assets/images/Kasa.png",
             "skills": {
                 "logo":"./assets/icons/react.png",
                 "label":"React"
@@ -69,7 +69,7 @@
             "title":"ArgentBank",
             "github":"https://github.com/AntoineMarchive/P10_ArgentBank-Frontend.git",
             "description":"",
-            "images":"/assets/images/Argentbank.png",
+            "images":"./assets/images/Argentbank.png",
             "skills": {
                 "logo":"./assets/icons/react.png",
                 "label":"React, Redux"
