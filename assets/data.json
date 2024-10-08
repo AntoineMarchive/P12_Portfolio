@@ -60,7 +60,7 @@
       "images": "./assets/images/Sophiebuel.png",
       "skills": [
         {
-          "label": "Html5 "
+          "label": "Html5"
         },
         {
           "label": "CSS "
@@ -83,16 +83,16 @@
           "label": "Html5 "
         },
         {
-          "label": "CSS "
+          "label": "CSS"
         },
         {
-          "Label": "Github"
+          "label": "Github"
         },
         {
           "label": "Javascript"
         },
         {
-          "Label": "SASS"
+          "label": "SASS"
         },
         {
           "label": "React"
