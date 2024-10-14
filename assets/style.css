@@ -434,9 +434,14 @@ footer a:hover {
   }
 
   .carousel-item {
-    min-width: unset; /* Désactiver la largeur minimale du carrousel */
-    max-width: 100%; /* Ajuster à la grille */
-  }
+    flex: 1 0 100%; /* Occupe toute la largeur disponible */
+    padding: 10px; /* Ajuste le padding si nécessaire */
+    margin-bottom: 20px; /* Espace entre les projets */
+    border: 2px solid #ccc; /* Couleur de la bordure */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    background-color: #fff; /* Fond blanc */
+}
 
   .carousel-item img {
     max-width: 100%; /* Ajuster l'image à la grille */
@@ -444,8 +449,10 @@ footer a:hover {
   }
 
   .label-projects {
-    display: none;
-  }
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes en mode responsive */
+    justify-items: center; /* Centre les labels dans la grille */
+}
 
   /* Masquer les boutons de navigation */
   .project-btn {

@@ -28,23 +28,43 @@ async function loadData() {
     projects.forEach((project) => {
         const div = document.createElement("div");
         div.classList.add("carousel-item");
-
+    
         const img = document.createElement("img");
         img.src = project.images;
         img.alt = project.title;
-
+    
+        // Ajout de l'événement de clic pour l'image
         img.addEventListener("click", () => {
             window.open(project.github, "_blank");
         });
-
+    
+        // Création du titre h3
         const h3 = document.createElement("h3");
         h3.innerText = project.title;
-
+    
+        // Création de la div pour les labels
+        const divLabelProjects = document.createElement("div");
+        divLabelProjects.classList.add("label-projects"); // Ajout de la classe label-projects
+    
+        // Ajout des labels dynamiquement (s'ils existent dans ton projet)
+        if (project.skills && project.skills.length > 0) {
+            project.skills.forEach((skill) => {
+                const span = document.createElement("span");
+                span.innerText = skill.label.trim(); // Met le texte du label
+                divLabelProjects.appendChild(span); // Ajout de chaque label à label-projects
+            });
+        }
+    
+        // Ajout des éléments au div parent
         div.appendChild(img);
         div.appendChild(h3);
-
+        div.appendChild(divLabelProjects); // Ajout de la div label-projects sous le h3
+    
+        // Ajout du div à la track du carousel
         carouselTrack.appendChild(div);
     });
+    
+    
 
     // Créer les indicateurs (bullet points)
     projects.forEach((_, index) => {
