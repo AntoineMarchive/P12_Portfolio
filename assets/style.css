@@ -264,6 +264,26 @@ article img {
   transform: scale(1.05);
 }
 
+/* affichage des labels sous le carousel */
+
+.label-projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px; /* Espace entre l'image du projet et les labels */
+}
+
+.label-projects span {
+  background-color: #f0f0f0; /* Couleur de fond des rectangles */
+  color: #333; /* Couleur du texte */
+  padding: 10px 20px; /* Espacement intérieur pour donner une forme rectangulaire */
+  margin: 5px; /* Espacement entre les labels */
+  border-radius: 5px; /* Coins légèrement arrondis */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre subtile pour l'effet de relief */
+  font-size: 14px; /* Taille du texte */
+  text-align: center;
+}
 
 /* Carousel Indicators */
 .carousel-indicators {
@@ -421,6 +441,10 @@ footer a:hover {
   .carousel-item img {
     max-width: 100%; /* Ajuster l'image à la grille */
     height: auto; /* Laisser l'image ajuster sa hauteur automatiquement */
+  }
+
+  .label-projects {
+    display: none;
   }
 
   /* Masquer les boutons de navigation */
