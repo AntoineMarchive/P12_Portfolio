@@ -6,8 +6,7 @@ async function loadData() {
     const skillsContainer = document.getElementById("skills-container");
     const carouselTrack = document.getElementById("project-track");
     const carouselIndicators = document.querySelector(".carousel-indicators");
-    const labelProjects = document.querySelector(".label-projects"); // Pour afficher les labels des projets
-
+    
     // Afficher les compétences avec un léger délai
     skills.forEach((skill, index) => {
         setTimeout(() => {
@@ -41,6 +40,9 @@ async function loadData() {
         // Création du titre h3
         const h3 = document.createElement("h3");
         h3.innerText = project.title;
+
+        const p = document.createElement("p");
+        p.innerText = project.description;
     
         // Création de la div pour les labels
         const divLabelProjects = document.createElement("div");
@@ -58,6 +60,7 @@ async function loadData() {
         // Ajout des éléments au div parent
         div.appendChild(img);
         div.appendChild(h3);
+        div.appendChild(p);
         div.appendChild(divLabelProjects); // Ajout de la div label-projects sous le h3
     
         // Ajout du div à la track du carousel
@@ -74,18 +77,6 @@ async function loadData() {
         carouselIndicators.appendChild(indicator);
     });
 
-    // Fonction pour afficher les labels des compétences du projet courant
-    function updateProjectLabels(index) {
-        // Vider la div des labels avant de les remplir
-        labelProjects.innerHTML = '';
-
-        const currentProject = projects[index];
-        currentProject.skills.forEach((skill) => {
-            const span = document.createElement("span");
-            span.innerText = skill.label;
-            labelProjects.appendChild(span);
-        });
-    }
 
     // Initialisation du carrousel
     const carouselItems = document.querySelectorAll(".carousel-item");
@@ -97,8 +88,7 @@ async function loadData() {
         indicators.forEach((indicator, i) => {
             indicator.classList.toggle("active", i === index);
         });
-        // Mettre à jour les labels quand le projet change
-        updateProjectLabels(index);
+       
     }
 
     // Changer les boutons en flèches
@@ -119,8 +109,6 @@ async function loadData() {
         });
     });
 
-    // Initialiser avec les labels du premier projet
-    updateProjectLabels(currentIndex);
 }
 
 loadData();
