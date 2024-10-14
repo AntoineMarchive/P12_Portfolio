@@ -6,6 +6,7 @@ async function loadData() {
     const skillsContainer = document.getElementById("skills-container");
     const carouselTrack = document.getElementById("project-track");
     const carouselIndicators = document.querySelector(".carousel-indicators");
+    const labelProjects = document.querySelector(".label-projects"); // Pour afficher les labels des projets
 
     // Afficher les compétences avec un léger délai
     skills.forEach((skill, index) => {
@@ -53,6 +54,19 @@ async function loadData() {
         carouselIndicators.appendChild(indicator);
     });
 
+    // Fonction pour afficher les labels des compétences du projet courant
+    function updateProjectLabels(index) {
+        // Vider la div des labels avant de les remplir
+        labelProjects.innerHTML = '';
+
+        const currentProject = projects[index];
+        currentProject.skills.forEach((skill) => {
+            const span = document.createElement("span");
+            span.innerText = skill.label;
+            labelProjects.appendChild(span);
+        });
+    }
+
     // Initialisation du carrousel
     const carouselItems = document.querySelectorAll(".carousel-item");
     const indicators = document.querySelectorAll(".indicator");
@@ -63,6 +77,8 @@ async function loadData() {
         indicators.forEach((indicator, i) => {
             indicator.classList.toggle("active", i === index);
         });
+        // Mettre à jour les labels quand le projet change
+        updateProjectLabels(index);
     }
 
     // Changer les boutons en flèches
@@ -82,6 +98,9 @@ async function loadData() {
             updateCarousel(currentIndex);
         });
     });
+
+    // Initialiser avec les labels du premier projet
+    updateProjectLabels(currentIndex);
 }
 
 loadData();
