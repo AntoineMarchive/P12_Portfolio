@@ -44,7 +44,7 @@
       "github": "https://github.com/AntoineMarchive/Projet_4_Ohmyfood.git",
       "description": "",
       "images": "./assets/images/Ohmyfood.png",
-      "skill": [
+      "skills": [
         {
           "label": "Html5 "
         },
@@ -112,13 +112,13 @@
           "label": "CSS "
         },
         {
-          "Label": "Github"
+          "label": "Github"
         },
         {
           "label": "Javascript"
         },
         {
-          "Label": "SASS"
+          "label": "SASS"
         },
         {
           "label": "React"
