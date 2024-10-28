@@ -1,39 +1,39 @@
 {
   "skills": [
     {
-      "logo": "./assets/icons/html5.png",
+      "logo": "./assets/icons/html5.webp",
       "label": "Html5"
     },
     {
-      "logo": "./assets/icons/css.png",
+      "logo": "./assets/icons/css.webp",
       "label": "CSS"
     },
     {
-      "logo": "./assets/icons/responsive.png",
+      "logo": "./assets/icons/responsive.webp",
       "label": "Web Design Responsive"
     },
     {
-      "logo": "./assets/icons/sass.png",
+      "logo": "./assets/icons/sass.webp",
       "label": "Sass"
     },
     {
-      "logo": "./assets/icons/javascript.png",
+      "logo": "./assets/icons/javascript.webp",
       "label": "Javascript"
     },
     {
-      "logo": "./assets/icons/react.png",
+      "logo": "./assets/icons/react.webp",
       "label": "React"
     },
     {
-      "logo": "./assets/icons/redux.png",
+      "logo": "./assets/icons/redux.webp",
       "label": "Redux"
     },
     {
-      "logo": "./assets/icons/devtools.png",
+      "logo": "./assets/icons/devtools.webp",
       "label": "DevTools"
     },
     {
-      "logo": "./assets/icons/github.png",
+      "logo": "./assets/icons/github.webp",
       "label": "Github"
     }
   ],
@@ -43,7 +43,7 @@
       "title": "Oh_My_Food",
       "github": "https://github.com/AntoineMarchive/Projet_4_Ohmyfood.git",
       "description": "Oh My Food est un site mobile-first permettant aux clients de précommander des menus de restaurants gastronomiques pour réduire les temps d'attente. Les compétences utilisées incluent SASS pour le CSS, le développement responsive, et l'animation CSS.",
-      "images": "./assets/images/Ohmyfood.png",
+      "images": "./assets/images/Ohmyfood.webp",
       "skills": [
         {
           "label": "Html5 "
@@ -63,7 +63,7 @@
       "title": "Sophie_Buel",
       "github": "https://github.com/AntoineMarchive/Portfolio-architecte-sophie-bluel.git",
       "description": "j'ai réalisé la création du portfolio Sophie Buel 'architecte d'intérieur', en m'appuyant sur des maquettes Figma et un code existant pour développer des pages de présentation, une page de connexion administrateur et une modale d'upload de médias. Mes compétences en HTML, CSS et JavaScript seront essentielles pour mener à bien ce projet.",
-      "images": "./assets/images/Sophiebuel.png",
+      "images": "./assets/images/Sophiebuel.webp",
       "skills": [
         {
           "label": "Html5"
@@ -83,7 +83,7 @@
       "title": "kasa",
       "github": "https://github.com/AntoineMarchive/Kasa_Projet7.git",
       "description": "En tant que développeur front-end freelance pour Kasa, je participe à la refonte complète du site de location d'appartements, en utilisant React pour construire les composants et les routes, tout en respectant les maquettes Figma et les contraintes fonctionnelles. Mes compétences en JavaScript, React, ainsi qu'en Sass pour le style et les animations CSS, sont mises en œuvre pour garantir un code de qualité et une expérience utilisateur fluide.",
-      "images": "./assets/images/Kasa.png",
+      "images": "./assets/images/Kasa.webp",
       "skills": [
         {
           "label": "Html5 "
@@ -109,7 +109,7 @@
       "title": "ArgentBank",
       "github": "https://github.com/AntoineMarchive/P10_ArgentBank-Frontend.git",
       "description": "Pour ce projet, je développe une application bancaire en front-end en utilisant React et Redux pour créer un tableau de bord responsive, tout en intégrant les appels API pour assurer la communication entre le client et le serveur. Mes compétences en documentation d'API avec Swagger et en développement full-stack avec Node.js renforcent votre expertise dans la gestion d'applications web complexes.",
-      "images": "./assets/images/Argentbank.png",
+      "images": "./assets/images/Argentbank.webp",
       "skills": [
         {
           "label": "Html5 "
